@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>206566280190-9u7ndffriqivvtqoo9gi2j7m099t8e7n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.206566280190-9u7ndffriqivvtqoo9gi2j7m099t8e7n</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>206566280190-kcq3asegghjo1n56tb6avs82011go6rl.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBqQFENrWHOI3kcxkqPhMhZ4psJIrV5614</string>
+	<key>GCM_SENDER_ID</key>
+	<string>206566280190</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.actson.ideaclip</string>
+	<key>PROJECT_ID</key>
+	<string>ideaclip-app</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ideaclip-app.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:206566280190:ios:0e363c32b5450771db0eaf</string>
+	<key>DATABASE_URL</key>
+	<string>https://ideaclip-app-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

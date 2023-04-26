@@ -1,0 +1,37 @@
+diff --git a/node_modules/react-native-video/android/build.gradle b/node_modules/react-native-video/android/build.gradle
+index 2fb8dfd..b508c95 100644
+--- a/node_modules/react-native-video/android/build.gradle
++++ b/node_modules/react-native-video/android/build.gradle
+@@ -22,5 +22,5 @@ android {
+ dependencies {
+     //noinspection GradleDynamicVersion
+     implementation "com.facebook.react:react-native:${safeExtGet('reactNativeVersion', '+')}"
+-    implementation 'com.yqritc:android-scalablevideoview:1.0.4'
++    implementation 'com.github.MatrixFrog:Android-ScalableVideoView:v1.0.4-jitpack'
+ }
+diff --git a/node_modules/react-native-video/android/build/intermediates/aar_metadata/debug/aar-metadata.properties b/node_modules/react-native-video/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+new file mode 100644
+index 0000000..d8560bd
+--- /dev/null
++++ b/node_modules/react-native-video/android/build/intermediates/aar_metadata/debug/aar-metadata.properties
+@@ -0,0 +1,2 @@
++aarFormatVersion=1.0
++aarMetadataVersion=1.0
+diff --git a/node_modules/react-native-video/android/build/intermediates/incremental/mergeDebugShaders/merger.xml b/node_modules/react-native-video/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+new file mode 100644
+index 0000000..cec9963
+--- /dev/null
++++ b/node_modules/react-native-video/android/build/intermediates/incremental/mergeDebugShaders/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/mnt/storage/project/React Native/ideaclipapp/Ideaclip/node_modules/react-native-video/android/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/mnt/storage/project/React Native/ideaclipapp/Ideaclip/node_modules/react-native-video/android/src/debug/shaders"/></dataSet></merger>
+\ No newline at end of file
+diff --git a/node_modules/react-native-video/android/build/intermediates/incremental/packageDebugAssets/merger.xml b/node_modules/react-native-video/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+new file mode 100644
+index 0000000..01f9d7e
+--- /dev/null
++++ b/node_modules/react-native-video/android/build/intermediates/incremental/packageDebugAssets/merger.xml
+@@ -0,0 +1,2 @@
++<?xml version="1.0" encoding="utf-8"?>
++<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/mnt/storage/project/React Native/ideaclipapp/Ideaclip/node_modules/react-native-video/android/src/main/assets"/><source path="/mnt/storage/project/React Native/ideaclipapp/Ideaclip/node_modules/react-native-video/android/build/intermediates/shader_assets/debug/out"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/mnt/storage/project/React Native/ideaclipapp/Ideaclip/node_modules/react-native-video/android/src/debug/assets"/></dataSet></merger>
+\ No newline at end of file

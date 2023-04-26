@@ -1,0 +1,8 @@
+{
+  "react-native": {
+    "database_persistence_enabled": false,
+    "android_task_executor_maximum_pool_size": 100,
+    "android_task_executor_keep_alive_seconds": 10,
+    "messaging_ios_auto_register_for_remote_messages": false
+  }
+}

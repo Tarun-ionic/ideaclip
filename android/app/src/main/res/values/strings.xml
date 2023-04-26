@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IDEACLIP</string>
+    <!--   prod-->
+    <string name="facebook_app_id">1292857677767966</string>
+    <string name="facebook_client_token">3c27844a3e7d0a3f93a5e38739254086</string>
+    <string name="fb_login_protocol_scheme">fb1292857677767966</string>
+    <string name="map_api_key">AIzaSyD-Vw_M1LdzLfg7CuxcVKrUxdnnZSsVRQY</string>
+
+
+    <string name="default_notification_channel_id">notify</string>
+</resources>

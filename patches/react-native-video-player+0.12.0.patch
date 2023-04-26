@@ -1,0 +1,508 @@
+diff --git a/node_modules/react-native-video-player/assets/img/back.png b/node_modules/react-native-video-player/assets/img/back.png
+new file mode 100644
+index 0000000..dc94629
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/back.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/back@2x.png b/node_modules/react-native-video-player/assets/img/back@2x.png
+new file mode 100644
+index 0000000..6995ade
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/back@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/back@3x.png b/node_modules/react-native-video-player/assets/img/back@3x.png
+new file mode 100644
+index 0000000..1e48e07
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/back@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/bottom-vignette.png b/node_modules/react-native-video-player/assets/img/bottom-vignette.png
+new file mode 100644
+index 0000000..afbd30e
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/bottom-vignette.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/bottom-vignette@2x.png b/node_modules/react-native-video-player/assets/img/bottom-vignette@2x.png
+new file mode 100644
+index 0000000..3fc751c
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/bottom-vignette@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/bottom-vignette@3x.png b/node_modules/react-native-video-player/assets/img/bottom-vignette@3x.png
+new file mode 100644
+index 0000000..23d2c60
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/bottom-vignette@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/error-icon.png b/node_modules/react-native-video-player/assets/img/error-icon.png
+new file mode 100644
+index 0000000..e1ed8e4
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/error-icon.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/error-icon@2x.png b/node_modules/react-native-video-player/assets/img/error-icon@2x.png
+new file mode 100644
+index 0000000..2398e53
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/error-icon@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/error-icon@3x.png b/node_modules/react-native-video-player/assets/img/error-icon@3x.png
+new file mode 100644
+index 0000000..c22f1e3
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/error-icon@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/expand.png b/node_modules/react-native-video-player/assets/img/expand.png
+new file mode 100644
+index 0000000..ffdf2f3
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/expand.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/expand@2x.png b/node_modules/react-native-video-player/assets/img/expand@2x.png
+new file mode 100644
+index 0000000..befd5c4
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/expand@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/expand@3x.png b/node_modules/react-native-video-player/assets/img/expand@3x.png
+new file mode 100644
+index 0000000..426d8ea
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/expand@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/loader-icon.png b/node_modules/react-native-video-player/assets/img/loader-icon.png
+new file mode 100644
+index 0000000..69e7ffd
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/loader-icon.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/loader-icon@2x.png b/node_modules/react-native-video-player/assets/img/loader-icon@2x.png
+new file mode 100644
+index 0000000..a19d279
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/loader-icon@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/loader-icon@3x.png b/node_modules/react-native-video-player/assets/img/loader-icon@3x.png
+new file mode 100644
+index 0000000..7fd2d59
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/loader-icon@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/pause.png b/node_modules/react-native-video-player/assets/img/pause.png
+new file mode 100644
+index 0000000..ac95b8f
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/pause.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/pause@2x.png b/node_modules/react-native-video-player/assets/img/pause@2x.png
+new file mode 100644
+index 0000000..93916df
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/pause@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/pause@3x.png b/node_modules/react-native-video-player/assets/img/pause@3x.png
+new file mode 100644
+index 0000000..ca68483
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/pause@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/play.png b/node_modules/react-native-video-player/assets/img/play.png
+new file mode 100644
+index 0000000..02f623f
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/play.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/play@2x.png b/node_modules/react-native-video-player/assets/img/play@2x.png
+new file mode 100644
+index 0000000..fdd43a1
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/play@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/play@3x.png b/node_modules/react-native-video-player/assets/img/play@3x.png
+new file mode 100644
+index 0000000..2ae4630
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/play@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/playRound.png b/node_modules/react-native-video-player/assets/img/playRound.png
+new file mode 100644
+index 0000000..6dd7704
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/playRound.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/playRoundLarge.png b/node_modules/react-native-video-player/assets/img/playRoundLarge.png
+new file mode 100644
+index 0000000..1fb4824
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/playRoundLarge.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/shrink.png b/node_modules/react-native-video-player/assets/img/shrink.png
+new file mode 100644
+index 0000000..8979a50
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/shrink.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/shrink@2x.png b/node_modules/react-native-video-player/assets/img/shrink@2x.png
+new file mode 100644
+index 0000000..03adefd
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/shrink@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/shrink@3x.png b/node_modules/react-native-video-player/assets/img/shrink@3x.png
+new file mode 100644
+index 0000000..ab012df
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/shrink@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/top-vignette.png b/node_modules/react-native-video-player/assets/img/top-vignette.png
+new file mode 100644
+index 0000000..6ba7130
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/top-vignette.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/top-vignette@2x.png b/node_modules/react-native-video-player/assets/img/top-vignette@2x.png
+new file mode 100644
+index 0000000..56f6f2a
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/top-vignette@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/top-vignette@3x.png b/node_modules/react-native-video-player/assets/img/top-vignette@3x.png
+new file mode 100644
+index 0000000..73b35b0
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/top-vignette@3x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/volume.png b/node_modules/react-native-video-player/assets/img/volume.png
+new file mode 100644
+index 0000000..506b8b0
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/volume.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/volume@2x.png b/node_modules/react-native-video-player/assets/img/volume@2x.png
+new file mode 100644
+index 0000000..4baafbc
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/volume@2x.png differ
+diff --git a/node_modules/react-native-video-player/assets/img/volume@3x.png b/node_modules/react-native-video-player/assets/img/volume@3x.png
+new file mode 100644
+index 0000000..4a330fb
+Binary files /dev/null and b/node_modules/react-native-video-player/assets/img/volume@3x.png differ
+diff --git a/node_modules/react-native-video-player/index.js b/node_modules/react-native-video-player/index.js
+index 61c3f94..f87d9b8 100644
+--- a/node_modules/react-native-video-player/index.js
++++ b/node_modules/react-native-video-player/index.js
+@@ -1,6 +1,16 @@
+ import React, { Component } from 'react';
+ import PropTypes from 'prop-types';
+-import { Image, ImageBackground, Platform, StyleSheet, Text, TextInput, TouchableOpacity, View, ViewPropTypes } from 'react-native';
++import {
++  Animated,
++  Easing,
++    Image,
++    ImageBackground,
++    Platform,
++    StyleSheet, Text,
++    TouchableOpacity,
++    View,
++    ViewPropTypes
++} from 'react-native';
+ import Icon from 'react-native-vector-icons/MaterialIcons';
+ import Video from 'react-native-video'; // eslint-disable-line
+
+@@ -38,13 +48,41 @@ const styles = StyleSheet.create({
+     justifyContent: 'center',
+     alignItems: 'center',
+   },
++    //loader patch
++      errorContainer: {
++        backgroundColor: 'rgba( 0, 0, 0, 0.5 )',
++          position: 'absolute',
++          top: 0,
++          right: 0,
++          bottom: 0,
++          left: 0,
++          justifyContent: 'center',
++         alignItems: 'center',
++        },
++    errorIcon: {
++        marginBottom: 16,
++        },
++    errorText: {
++        backgroundColor: 'transparent',
++          color: '#f27474',
++        },
++    loaderContainer: {
++        position: 'absolute',
++          padding:3,
++          top: 0,
++          right: 0,
++          bottom: 0,
++          left: 0,
++          alignItems: 'center',
++          justifyContent: 'center',
++        },
+   thumbnail: {
+     backgroundColor: 'black',
+     justifyContent: 'center',
+     alignItems: 'center',
+   },
+   playButton: {
+-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
++    // backgroundColor: 'rgba(0, 0, 0, 0.6)',
+     width: 64,
+     height: 64,
+     borderRadius: 32,
+@@ -121,10 +159,21 @@ const styles = StyleSheet.create({
+ });
+
+ export default class VideoPlayer extends Component {
++  static defaultProps = {
++    playInBackground: false,
++    playWhenInactive: false,
++    disabled:false,
++    minPlayer:false,
++    volume:0
++  };
++
+   constructor(props) {
+     super(props);
+
+     this.state = {
++      disabled:props.disabled,
++      minPlayer:props.minPlayer,
++      volume:props.volume,
+       isStarted: props.autoplay,
+       isPlaying: props.autoplay,
+       hasEnded: false,
+@@ -134,8 +183,16 @@ export default class VideoPlayer extends Component {
+       isControlsVisible: !props.hideControlsOnStart,
+       duration: 0,
+       isSeeking: false,
++        loading: false,
++            error:false,
+     };
+
++    this.opts = {
++            playWhenInactive: this.props.playWhenInactive,
++            playInBackground: this.props.playInBackground,
++  };
++
++
+     this.seekBarWidth = 200;
+     this.wasPlayingBeforeSeek = props.autoplay;
+     this.seekTouchStart = 0;
+@@ -146,6 +203,9 @@ export default class VideoPlayer extends Component {
+     this.onProgress = this.onProgress.bind(this);
+     this.onEnd = this.onEnd.bind(this);
+     this.onLoad = this.onLoad.bind(this);
++    this.onLoadStart = this.onLoadStart.bind(this);
++    // loader patch
++          this.onError = this.onError.bind(this)
+     this.onPlayPress = this.onPlayPress.bind(this);
+     this.onMutePress = this.onMutePress.bind(this);
+     this.showControls = this.showControls.bind(this);
+@@ -155,6 +215,27 @@ export default class VideoPlayer extends Component {
+     this.onSeekRelease = this.onSeekRelease.bind(this);
+     this.onSeek = this.onSeek.bind(this);
+     this.onSeekEvent = this.onSeekEvent.bind(this);
++
++
++              // loader patch
++                const initialValue = this.props.showOnStart ? 1 : 0;
++        this.animations = {
++            bottomControl: {
++              marginBottom: new Animated.Value(0),
++                opacity: new Animated.Value(initialValue),
++              },
++          topControl: {
++              marginTop: new Animated.Value(0),
++                opacity: new Animated.Value(initialValue),
++              },
++          video: {
++              opacity: new Animated.Value(1),
++              },
++          loader: {
++              rotate: new Animated.Value(0),
++                MAX_VALUE: 360,
++              },
++        };
+   }
+
+   componentDidMount() {
+@@ -170,6 +251,104 @@ export default class VideoPlayer extends Component {
+     }
+   }
+
++
++
++  // loader patch
++  componentDidUpdate(prevProps) {
++
++          if (prevProps.paused !== this.props.paused) {
++            this.setState({isPlaying:!this.props.paused})
++          }
++
++        }
++  onLoadStart() {
++        let state = this.state;
++        state.loading = true;
++        this.loadAnimation();
++        this.setState(state);
++
++          if (typeof this.props.onLoadStart === 'function') {
++            this.props.onLoadStart(...arguments);
++          }
++      }
++  loadAnimation() {
++        if (this.state.loading) {
++            Animated.sequence([
++                Animated.timing(this.animations.loader.rotate, {
++                    toValue: this.animations.loader.MAX_VALUE,
++                  duration: 1500,
++                  easing: Easing.linear,
++                  useNativeDriver: false,
++                }),
++              Animated.timing(this.animations.loader.rotate, {
++                  toValue: 0,
++                  duration: 0,
++                  easing: Easing.linear,
++                  useNativeDriver: false,
++                }),
++            ]).start(this.loadAnimation.bind(this));
++          }
++      }
++
++
++  renderLoader() {
++        if (this.state.loading) {
++            return (
++                <View style={styles.loaderContainer}>
++                    <Animated.Image
++                      source={require('./assets/img/loader-icon.png')}
++                      style={[
++                        {
++            // added background for loader
++
++                            backgroundColor: 'rgba( 0, 0, 0, 0.6 )',
++                          borderRadius:20,
++                          transform: [
++                            {
++                              rotate: this.animations.loader.rotate.interpolate({
++                                inputRange: [0, 360],
++                                outputRange: ['0deg', '360deg'],
++                              }),
++                            },
++                          ],
++                        },
++                      ]}
++                    />
++                  </View>
++              );
++          }
++        return null;
++      }
++
++  onError(err) {
++        let state = this.state;
++        state.error = true;
++        state.loading = false;
++        this.setState(state);
++      }
++
++  renderError() {
++        if (this.state.error) {
++            return (
++                <View style={styles.errorContainer}>
++                    <Image
++                      source={require('./assets/img/error-icon.png')}
++                      style={styles.errorIcon}
++                    />
++                    <Text style={styles.errorText}>Unable to play the file</Text>
++                  </View>
++              );
++          }
++        return null;
++      }
++
++
++
++
++
++
++
++
+   onLayout(event) {
+     const { width } = event.nativeEvent.layout;
+     this.setState({
+@@ -235,7 +414,7 @@ export default class VideoPlayer extends Component {
+     }
+
+     const { duration } = event;
+-    this.setState({ duration });
++    this.setState({ duration ,loading:false });
+   }
+
+   onPlayPress() {
+@@ -389,13 +568,18 @@ export default class VideoPlayer extends Component {
+   }
+
+   renderStartButton() {
+-    const { customStyles } = this.props;
++    const { customStyles,disabled } = this.props;
+     return (
+       <TouchableOpacity
+         style={[styles.playButton, customStyles.playButton]}
+         onPress={this.onStartPress}
++        disabled={disabled}
+       >
+-        <Icon style={[styles.playArrow, customStyles.playArrow]} name="play-arrow" size={42} />
++        {/*Added custom play button*/}
++                <Image
++                  source={require('./assets/img/playRoundLarge.png')}
++                  style={{width:'100%',height:'100%'}}
++                />
+       </TouchableOpacity>
+     );
+   }
+@@ -464,18 +648,26 @@ export default class VideoPlayer extends Component {
+   }
+
+   renderControls() {
+-    const { customStyles, showDuration } = this.props;
++    const { customStyles, showDuration,disabled } = this.props;
+     return (
+       <View style={[styles.controls, customStyles.controls]}>
+         <TouchableOpacity
++          disabled={disabled}
+           onPress={this.onPlayPress}
+           style={[customStyles.controlButton, customStyles.playControl]}
+         >
+-          <Icon
+-            style={[styles.playControl, customStyles.controlIcon, customStyles.playIcon]}
+-            name={this.state.isPlaying ? 'pause' : 'play-arrow'}
+-            size={32}
+-          />
++          {this.state.isPlaying && !this.state.paused ?
++                        <Icon
++                          style={[styles.playControl, customStyles.controlIcon, customStyles.playIcon]}
++                          name={'pause'}
++                          size={32}
++                        />
++                        :
++                        <Icon
++                         style={[styles.playControl, customStyles.controlIcon, customStyles.playIcon]}
++                          name={'play-arrow'}
++                          size={32}
++                        />}
+         </TouchableOpacity>
+         {this.renderSeekBar()}
+         {showDuration && (
+@@ -515,6 +707,7 @@ export default class VideoPlayer extends Component {
+       pauseOnPress,
+       fullScreenOnLongPress,
+       customStyles,
++      disabled,
+       ...props
+     } = this.props;
+     return (
+@@ -534,11 +727,18 @@ export default class VideoPlayer extends Component {
+             : !this.state.isPlaying}
+           onProgress={this.onProgress}
+           onEnd={this.onEnd}
++          onError={this.onError}
+           onLoad={this.onLoad}
++          volume={this.props.volume}
++          onLoadStart={this.onLoadStart}
+           source={video}
+           resizeMode={resizeMode}
+           onSeek={this.onSeekEvent}
++                  playInBackground={this.opts.playInBackground}
++                  playWhenInactive={this.opts.playWhenInactive}
+         />
++        {this.renderError()}
++        {this.renderLoader()}
+         <View
+           style={[
+             this.getSizeStyles(),
+@@ -549,8 +749,9 @@ export default class VideoPlayer extends Component {
+             style={styles.overlayButton}
+             onPress={() => {
+               this.showControls();
+-              if (pauseOnPress)
++              if (pauseOnPress && !disabled) {
+                 this.onPlayPress();
++              }
+             }}
+             onLongPress={() => {
+               if (fullScreenOnLongPress && Platform.OS !== 'android')
+@@ -558,7 +759,7 @@ export default class VideoPlayer extends Component {
+             }}
+           />
+         </View>
+-        {((!this.state.isPlaying) || this.state.isControlsVisible)
++        {((!this.state.isPlaying) || this.state.isControlsVisible) && (!this.state.minPlayer)
+           ? this.renderControls() : this.renderSeekBar(true)}
+       </View>
+     );
+@@ -593,6 +794,13 @@ export default class VideoPlayer extends Component {
+ }
+
+ VideoPlayer.propTypes = {
++    playInBackground: PropTypes.bool,
++    playWhenInactive: PropTypes.bool,
++    disabled: PropTypes.bool,
++    minPlayer: PropTypes.bool,
++    volume: PropTypes.number,
++
++
+   video: Video.propTypes.source,
+   thumbnail: Image.propTypes.source,
+   endThumbnail: Image.propTypes.source,
+@@ -646,6 +854,8 @@ VideoPlayer.propTypes = {
+ };
+
+ VideoPlayer.defaultProps = {
++  disabled:false,
++  minPlayer:false,
+   videoWidth: 1280,
+   videoHeight: 720,
+   autoplay: false,

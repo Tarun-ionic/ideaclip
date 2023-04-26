@@ -1,0 +1,186 @@
+import {StyleSheet} from 'react-native';
+import scale from 'utilities/scale';
+
+export const PopupStyle = ({colors}) =>
+    StyleSheet.create({
+        modal: {
+            flex: 1,
+            alignItems: 'center',
+            alignContent: 'center',
+        },
+        container: {
+            width: scale.ms(300, 0.5),
+            flexDirection: 'column',
+            backgroundColor: colors.alertBox,
+            marginTop: 120,
+            marginLeft: 40,
+            marginRight: 40,
+            marginBottom: 120,
+            borderRadius: 20,
+            padding: 10,
+            shadowOffset: {
+                width: 0,
+                height: 2,
+            },
+            shadowOpacity: 0.25,
+            shadowRadius: 3.84,
+            elevation: 5,
+        },
+        title: {
+            flex: 1,
+            fontSize: scale.font.xxl,
+            alignItems: 'center',
+            marginLeft: 20,
+            color: colors.secondaryDark,
+        },
+        popupTitle: {
+            flex: 1,
+            fontSize: scale.font.xxl,
+            alignItems: 'center',
+            marginLeft: 20,
+            color: colors.textPrimaryDark,
+        },
+        elementTitle: {
+            height: 30,
+            margin: 10,
+            flexDirection: 'row',
+            alignItems: 'center',
+            color: colors.textSecondaryDark,
+        },
+        switchView: {
+            flexDirection: 'row',
+            marginVertical: 10,
+        },
+        switchLabel: {
+            fontSize: scale.font.xl,
+            marginRight: 10,
+            color: colors.textPrimaryDark,
+        },
+
+        line: {
+            width: '100%',
+            height: 1,
+            backgroundColor: colors.lineSeparation,
+        },
+        line2: {
+            flex: 1,
+            margin: 20,
+            height: 1,
+            backgroundColor: colors.lineSeparation2,
+        },
+        searchLabel: {
+            color: colors.textPrimaryDark,
+            fontSize: scale.font.xl,
+            marginStart: 10,
+        },
+        slider: {
+            width: '100%',
+            height: 40,
+        },
+        rangeText: {
+            fontSize: scale.font.xl,
+            color: colors.textPrimaryDark,
+            minWidth: 30,
+            textAlign: 'right',
+        },
+        buttonRow: {
+            flexDirection: 'row',
+            alignItems: 'flex-end',
+            justifyContent: 'flex-end',
+            textAlign: 'center',
+            marginVertical: 10,
+        },
+        buttonView: {
+            alignSelf: 'flex-end',
+            margin: 10,
+        },
+        button: {
+            backgroundColor: colors.primary,
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            borderRadius: 20,
+            padding: 3,
+        },
+        chipsView: {
+            marginBottom: 10,
+        },
+        searchBox: {
+            height: 42,
+            marginHorizontal: 10,
+            width: '90%',
+            alignSelf: 'center',
+            borderRadius: 50,
+        },
+        selectedContainer: {
+            width: '100%',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+        },
+        labelSubTextView: {
+            marginVertical: 10,
+            marginHorizontal: 15,
+            color: colors.textPrimary,
+            fontSize: scale.font.s,
+        },
+        searchBar: {
+            marginTop: 5,
+            flexDirection: 'row',
+            backgroundColor: colors.alertBox,
+            zIndex: 5,
+            alignItems: 'center',
+            padding: 5,
+        },
+        searchBarInput: {
+            textAlign: 'left',
+            textAlignVertical: 'center',
+            alignSelf: 'center',
+            flex: 1,
+            marginLeft: 5,
+            fontSize: scale.font.s,
+            padding: 5,
+            color: colors.textPrimaryDark,
+            backgroundColor: colors.surfaceDark,
+        },
+        searchBarWrap: {
+            flex: 1,
+            marginHorizontal: 5,
+            flexDirection: 'row',
+            borderRadius: 20,
+            fontSize: scale.font.xl,
+            alignSelf: 'center',
+            alignItems: 'center',
+            overflow: 'hidden',
+            borderWidth: 0.7,
+            paddingHorizontal: 15,
+            color: colors.textPrimaryDark,
+            borderColor: colors.secondaryAccent,
+            backgroundColor: colors.surfaceDark,
+        },
+        chipText: {
+            color: colors.secondaryDark,
+            fontSize: 12,
+        },
+        chipsContent: {
+            height: 35,
+            margin: 5,
+            backgroundColor: colors.surfaceDark,
+            borderColor: colors.secondaryDark,
+            elevation: 5,
+        },
+        staticText: {
+            fontSize: 14,
+        },
+        keywordText: {
+            color: colors.secondaryDark,
+            fontSize: 14,
+        },
+        collabcontainer: {
+            margin: 20,
+            borderRadius: 5,
+            paddingHorizontal: 10,
+            paddingVertical: 15,
+
+            backgroundColor: colors.collabSettingBox,
+        },
+    });

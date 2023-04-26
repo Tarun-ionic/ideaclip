@@ -1,0 +1,233 @@
+diff --git a/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.d.ts b/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.d.ts
+index f968690..227c071 100644
+--- a/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.d.ts
++++ b/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.d.ts
+@@ -24,5 +24,16 @@ export interface LinkPreviewProps {
+     text: string;
+     textContainerStyle?: StyleProp<ViewStyle>;
+     touchableWithoutFeedbackProps?: TouchableWithoutFeedbackProps;
++
++    // custom parameters
++    imageFirst?:boolean;
++    showContainer?:boolean;
++    showDescription?:boolean;
++    showHeader?:boolean;
++    showText?:boolean;
++    showTitle?:boolean;
++    descriptionStyle?: StyleProp<ViewStyle>;
++    imageStyle?:StyleProp<ViewStyle>;
++    titleStyle?: StyleProp<ViewStyle>;
+ }
+-export declare const LinkPreview: React.MemoExoticComponent<({ containerStyle, enableAnimation, header, metadataContainerStyle, metadataTextContainerStyle, onPreviewDataFetched, previewData, renderDescription, renderHeader, renderImage, renderLinkPreview, renderMinimizedImage, renderText, renderTitle, requestTimeout, text, textContainerStyle, touchableWithoutFeedbackProps, }: LinkPreviewProps) => JSX.Element>;
++export declare const LinkPreview: React.MemoExoticComponent<({ containerStyle, enableAnimation, header, metadataContainerStyle, metadataTextContainerStyle, onPreviewDataFetched, previewData, renderDescription, renderHeader, renderImage, renderLinkPreview, renderMinimizedImage, renderText, renderTitle, requestTimeout, text, textContainerStyle, touchableWithoutFeedbackProps, imageFirst,showContainer,showDescription,showHeader,showText,showTitle,titleStyle,descriptionStyle,imageStyle}: LinkPreviewProps) => JSX.Element>;
+diff --git a/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.js b/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.js
+index 7ab00a6..49eab51 100644
+--- a/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.js
++++ b/node_modules/@flyerhq/react-native-link-preview/lib/LinkPreview.js
+@@ -1,7 +1,37 @@
+ import * as React from 'react';
+-import { Image, LayoutAnimation, Linking, StyleSheet, Text, TouchableWithoutFeedback, View, } from 'react-native';
+-import { getPreviewData, oneOf } from './utils';
+-export const LinkPreview = React.memo(({ containerStyle, enableAnimation, header, metadataContainerStyle, metadataTextContainerStyle, onPreviewDataFetched, previewData, renderDescription, renderHeader, renderImage, renderLinkPreview, renderMinimizedImage, renderText, renderTitle, requestTimeout = 5000, text, textContainerStyle, touchableWithoutFeedbackProps, }) => {
++import {Image, LayoutAnimation, Linking, StyleSheet, Text, TouchableWithoutFeedback, View,} from 'react-native';
++import {getPreviewData, oneOf} from './utils';
++
++export const LinkPreview = React.memo(({
++                                           containerStyle,
++                                           enableAnimation,
++                                           header,
++                                           metadataContainerStyle,
++                                           metadataTextContainerStyle,
++                                           onPreviewDataFetched,
++                                           previewData,
++                                           renderDescription,
++                                           renderHeader,
++                                           renderImage,
++                                           renderLinkPreview,
++                                           renderMinimizedImage,
++                                           renderText,
++                                           renderTitle,
++                                           requestTimeout = 5000,
++                                           text,
++                                           textContainerStyle,
++                                           touchableWithoutFeedbackProps,
++                                           //custom props
++                                           imageStyle,
++                                           titleStyle,
++                                           descriptionStyle,
++                                           imageFirst = false,
++                                           showContainer = true,
++                                           showDescription = true,
++                                           showHeader = true,
++                                           showText = true,
++                                           showTitle = true
++                                       }) => {
+     const [containerWidth, setContainerWidth] = React.useState(0);
+     const [data, setData] = React.useState(previewData);
+     const aspectRatio = (data === null || data === void 0 ? void 0 : data.image)
+@@ -44,18 +74,22 @@ export const LinkPreview = React.memo(({ containerStyle, enableAnimation, header
+     }, []);
+     const handlePress = () => (data === null || data === void 0 ? void 0 : data.link) && Linking.openURL(data.link);
+     const renderDescriptionNode = (description) => {
+-        return oneOf(renderDescription, React.createElement(Text, { numberOfLines: 3, style: styles.description }, description))(description);
++        return oneOf(renderDescription, React.createElement(Text, {
++            numberOfLines: 3,
++            style: StyleSheet.flatten([styles.description, descriptionStyle])
++        }, description))(description);
+     };
+     const renderHeaderNode = () => {
+         return header
+-            ? oneOf(renderHeader, React.createElement(Text, { numberOfLines: 1, style: styles.header }, header))(header)
++            ? oneOf(renderHeader, React.createElement(Text, {numberOfLines: 1, style: styles.header}, header))(header)
+             : null;
+     };
+     const renderImageNode = (image) => {
+         // aspectRatio shouldn't be undefined, just an additional check
+         /* istanbul ignore next */
+         const ar = aspectRatio !== null && aspectRatio !== void 0 ? aspectRatio : 1;
+-        return oneOf(renderImage, React.createElement(Image, { accessibilityRole: 'image', resizeMode: 'contain', source: { uri: image.url }, style: StyleSheet.flatten([
++        return oneOf(renderImage, React.createElement(Image, {
++            accessibilityRole: 'image', resizeMode: 'contain', source: {uri: image.url}, style: StyleSheet.flatten([
+                 styles.image,
+                 ar < 1
+                     ? {
+@@ -68,50 +102,108 @@ export const LinkPreview = React.memo(({ containerStyle, enableAnimation, header
+                         maxHeight: containerWidth,
+                         width: containerWidth,
+                     },
+-            ]) }))(image);
++                imageStyle
++            ])
++        }))(image);
+     };
+     const renderLinkPreviewNode = () => {
+-        return oneOf(renderLinkPreview, React.createElement(React.Fragment, null,
+-            React.createElement(View, { style: StyleSheet.flatten([
+-                    styles.textContainer,
+-                    textContainerStyle,
+-                ]) },
+-                renderHeaderNode(),
+-                renderTextNode(),
+-                ((data === null || data === void 0 ? void 0 : data.description) ||
+-                    ((data === null || data === void 0 ? void 0 : data.image) &&
++        //custom ui props added
++        if (imageFirst) {
++            return oneOf(renderLinkPreview, React.createElement(React.Fragment, null, (data === null || data === void 0 ? void 0 : data.image) &&
++                (aspectRatio !== 1 || (!(data === null || data === void 0 ? void 0 : data.description) && !data.title)) &&
++                renderImageNode(data.image),
++                showContainer && React.createElement(View, {
++                        style: StyleSheet.flatten([
++                            styles.textContainer,
++                            textContainerStyle,
++                        ])
++                    },
++                    showHeader && renderHeaderNode(),
++                    showText && renderTextNode(),
++                    ((data === null || data === void 0 ? void 0 : data.description) ||
++                        ((data === null || data === void 0 ? void 0 : data.image) &&
++                            aspectRatio === 1 &&
++                            ((data === null || data === void 0 ? void 0 : data.description) || (data === null || data === void 0 ? void 0 : data.title))) ||
++                        (data === null || data === void 0 ? void 0 : data.title)) && (React.createElement(View, {
++                            style: StyleSheet.flatten([
++                                styles.metadataContainer,
++                                metadataContainerStyle,
++                            ])
++                        },
++                        (showDescription || showTitle) && React.createElement(View, {
++                                style: StyleSheet.flatten([
++                                    styles.metadataTextContainer,
++                                    metadataTextContainerStyle,
++                                ])
++                            },
++                            (data === null || data === void 0 ? void 0 : data.title) && showTitle && renderTitleNode(data.title),
++                            (data === null || data === void 0 ? void 0 : data.description) && showDescription && renderDescriptionNode(data.description)),
++                        (data === null || data === void 0 ? void 0 : data.image) &&
+                         aspectRatio === 1 &&
+-                        ((data === null || data === void 0 ? void 0 : data.description) || (data === null || data === void 0 ? void 0 : data.title))) ||
+-                    (data === null || data === void 0 ? void 0 : data.title)) && (React.createElement(View, { style: StyleSheet.flatten([
+-                        styles.metadataContainer,
+-                        metadataContainerStyle,
+-                    ]) },
+-                    React.createElement(View, { style: StyleSheet.flatten([
+-                            styles.metadataTextContainer,
+-                            metadataTextContainerStyle,
+-                        ]) },
+-                        (data === null || data === void 0 ? void 0 : data.title) && renderTitleNode(data.title),
+-                        (data === null || data === void 0 ? void 0 : data.description) && renderDescriptionNode(data.description)),
+-                    (data === null || data === void 0 ? void 0 : data.image) &&
++                        renderMinimizedImageNode(data.image)))),
++            ))({
++                aspectRatio,
++                containerWidth,
++                previewData: data,
++            });
++        } else
++            return oneOf(renderLinkPreview, React.createElement(React.Fragment, null,
++                showContainer && React.createElement(View, {
++                        style: StyleSheet.flatten([
++                            styles.textContainer,
++                            textContainerStyle,
++                        ])
++                    },
++                    showHeader && renderHeaderNode(),
++                    showText && renderTextNode(),
++                    ((data === null || data === void 0 ? void 0 : data.description) ||
++                        ((data === null || data === void 0 ? void 0 : data.image) &&
++                            aspectRatio === 1 &&
++                            ((data === null || data === void 0 ? void 0 : data.description) || (data === null || data === void 0 ? void 0 : data.title))) ||
++                        (data === null || data === void 0 ? void 0 : data.title)) && (React.createElement(View, {
++                            style: StyleSheet.flatten([
++                                styles.metadataContainer,
++                                metadataContainerStyle,
++                            ])
++                        },
++                        showDescription && React.createElement(View, {
++                                style: StyleSheet.flatten([
++                                    styles.metadataTextContainer,
++                                    metadataTextContainerStyle,
++                                ])
++                            },
++                            (data === null || data === void 0 ? void 0 : data.title) && showTitle && renderTitleNode(data.title),
++                            (data === null || data === void 0 ? void 0 : data.description) && showDescription && renderDescriptionNode(data.description)),
++                        (data === null || data === void 0 ? void 0 : data.image) &&
+                         aspectRatio === 1 &&
+                         renderMinimizedImageNode(data.image)))),
+-            (data === null || data === void 0 ? void 0 : data.image) &&
++                (data === null || data === void 0 ? void 0 : data.image) &&
+                 (aspectRatio !== 1 || (!(data === null || data === void 0 ? void 0 : data.description) && !data.title)) &&
+                 renderImageNode(data.image)))({
+-            aspectRatio,
+-            containerWidth,
+-            previewData: data,
+-        });
++                aspectRatio,
++                containerWidth,
++                previewData: data,
++            });
+     };
+     const renderMinimizedImageNode = (image) => {
+-        return oneOf(renderMinimizedImage, React.createElement(Image, { accessibilityRole: 'image', source: { uri: image.url }, style: styles.minimizedImage }))(image);
++        return oneOf(renderMinimizedImage, React.createElement(Image, {
++            accessibilityRole: 'image',
++            source: {uri: image.url},
++            style: styles.minimizedImage
++        }))(image);
+     };
+     const renderTextNode = () => oneOf(renderText, React.createElement(Text, null, text))(text);
+     const renderTitleNode = (title) => {
+-        return oneOf(renderTitle, React.createElement(Text, { numberOfLines: 2, style: styles.title }, title))(title);
++        return oneOf(renderTitle, React.createElement(Text, {
++            numberOfLines: 2,
++            style: StyleSheet.flatten([styles.title, titleStyle])
++        }, title))(title);
+     };
+-    return (React.createElement(TouchableWithoutFeedback, { accessibilityRole: 'button', onPress: handlePress, ...touchableWithoutFeedbackProps },
+-        React.createElement(View, { onLayout: handleContainerLayout, style: containerStyle }, renderLinkPreviewNode())));
++    return (React.createElement(TouchableWithoutFeedback, {
++            accessibilityRole: 'button',
++            onPress: handlePress, ...touchableWithoutFeedbackProps
++        },
++        React.createElement(View, {onLayout: handleContainerLayout, style: containerStyle}, renderLinkPreviewNode())));
+ });
+ const styles = StyleSheet.create({
+     description: {

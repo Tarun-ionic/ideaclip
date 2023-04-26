@@ -1,0 +1,75 @@
+diff --git a/node_modules/react-native-emoji-board/component/CategoryTabBar.js b/node_modules/react-native-emoji-board/component/CategoryTabBar.js
+index fc61df5..33c4695 100644
+--- a/node_modules/react-native-emoji-board/component/CategoryTabBar.js
++++ b/node_modules/react-native-emoji-board/component/CategoryTabBar.js
+@@ -15,21 +15,22 @@ const {width} = Dimensions.get('window');
+ const styles = StyleSheet.create({
+     tabs: {
+         height: 30,
+-        width: width,
++        width:'100%',
+         flexDirection: 'row',
+         justifyContent: 'space-between',
+         paddingLeft: isIphoneXorAbove() ? 15 : 5
+     },
+     scrollView: {
++        flex:1,
+         flexDirection: 'row',
+         alignItems: 'center',
+-        justifyContent: 'center'
++        justifyContent: 'space-between'
+     },
+     tab: {
+         marginLeft: 10
+     },
+     backsplace: {
+-        marginRight: 20
++        marginHorizontal: 20,
+     }
+ });
+ 
+diff --git a/node_modules/react-native-emoji-board/component/EmojiIcon.js b/node_modules/react-native-emoji-board/component/EmojiIcon.js
+index 7e35c45..72d703f 100644
+--- a/node_modules/react-native-emoji-board/component/EmojiIcon.js
++++ b/node_modules/react-native-emoji-board/component/EmojiIcon.js
+@@ -9,6 +9,7 @@ const styles = StyleSheet.create({
+         justifyContent: 'center'
+     },
+     emoji: {
++        color: '#ffffff',
+         textAlign: 'center'
+     },
+     emojiImg: {
+diff --git a/node_modules/react-native-emoji-board/index.js b/node_modules/react-native-emoji-board/index.js
+index 32c674a..7266784 100644
+--- a/node_modules/react-native-emoji-board/index.js
++++ b/node_modules/react-native-emoji-board/index.js
+@@ -47,7 +47,7 @@ const EmojiBoard = ({
+     categoryIconSize = 20,
+     containerStyle = {},
+     tabBarStyle = {},
+-    labelStyle = {}
++    labelStyle = {width:'100%'}
+ }) => {
+     // emoji board height only for android
+     const containerHeight = numCols * 40 + 40 + 40;
+@@ -86,6 +86,9 @@ const EmojiBoard = ({
+     if (!emojiData) {
+         return null;
+     }
++    // if (!showBoard) {
++    //     return null;
++    // }
+     let groupsView = [];
+     _.each(categories, (category, key) => {
+         const {name} = category;
+@@ -110,7 +113,8 @@ const EmojiBoard = ({
+                 styles.container,
+                 {
+                     bottom: position,
+-                    height: isAndroid() ? containerHeight : 'auto'
++                    height: isAndroid() ? containerHeight : containerHeight,
++                    width:'100%'
+                 },
+                 containerStyle
+             ]}>

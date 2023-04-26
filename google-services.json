@@ -1,0 +1,64 @@
+{
+  "project_info": {
+    "project_number": "785912708609",
+    "firebase_url": "https://ideaclip-app-dev-default-rtdb.firebaseio.com",
+    "project_id": "ideaclip-app-dev",
+    "storage_bucket": "ideaclip-app-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785912708609:android:b5d007aa6a73f1f7bc8a00",
+        "android_client_info": {
+          "package_name": "com.actson.ideaclip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "785912708609-6et72o55ohjkh0f2njmfls4on97lfkj5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.actson.ideaclip",
+            "certificate_hash": "6b84244f703ea9cd6ed13d075c77084e7d250b0a"
+          }
+        },
+        {
+          "client_id": "785912708609-mqjvq7d6sn4ck6oc8acv7p1jg5lovnsv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.actson.ideaclip",
+            "certificate_hash": "3cf5bc4d4b09325799ae62b16566adc9062bbd56"
+          }
+        },
+        {
+          "client_id": "785912708609-abpdl7tp29qlokrd0af1g0oe98uvk4v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTq2W22qRBULutcHwL7UCmy32ZXjuPT7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "785912708609-abpdl7tp29qlokrd0af1g0oe98uvk4v9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "785912708609-07u9ld00kr5gmkukahv68gv54kbslnf7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.actson.ideaclip",
+                "app_store_id": "1578859437"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
